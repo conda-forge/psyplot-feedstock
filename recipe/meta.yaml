@@ -1,6 +1,6 @@
 {% set name = "psyplot" %}
-{% set version = "1.0.0.post1" %}
-{% set sha256 = "cd608c358304157deb97f4839499fb4169460894560c1d79971f38b21c5ea12b" %}
+{% set version = "1.1.0.post1" %}
+{% set sha256 = "88d16406dde02f24f9195c1fafb954c1e9aafa7c38efc6dc3307e18d02f3b7ec" %}
 
 package:
   name: {{ name|lower }}
