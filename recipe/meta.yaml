@@ -1,6 +1,6 @@
 {% set name = "psyplot" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "3723cf4ebf9f6c6343989aa88c88b045ba568c844495ee3d54bb58d7c1a29d5a" %}
+{% set version = "1.2.1" %}
+{% set sha256 = "9c4031ad928bc75c41342a7bace23d04dff823a2e2d0710567972df66a61e2e7" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install . --no-deps --ignore-installed -vvv
   entry_points:
   - psyplot = psyplot.__main__:main
