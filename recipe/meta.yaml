@@ -19,7 +19,7 @@ build:
     - psyplot-plugin = psyplot.plugin_template:main
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
