@@ -27,7 +27,7 @@ requirements:
     - matplotlib-base
     - funcargparse
     - docrep >=0.3
-    - xarray
+    - xarray >=0.17
     - pyyaml
 
 test:
@@ -41,10 +41,12 @@ test:
     - psyplot.sphinxext
 
 about:
-  home: https://github.com/Chilipp/psyplot
-  license: GPL-2.0-only
+  home: https://github.com/psyplot/psyplot
+  license: LGPL-3.0-only
   license_family: GPL
-  license_file: LICENSE
+  license_file:
+    - COPYING
+    - COPYING.LESSER
   summary: Python package for interactive data visualization
 
   description: |
@@ -52,8 +54,8 @@ about:
     combines the plotting utilities of matplotlib and the data management of
     the xarray package and integrates them into a software that can be used via
     command-line and via a GUI.
-  doc_url: http://psyplot.readthedocs.io/en/latest/
-  dev_url: https://github.com/Chilipp/psyplot
+  doc_url: https://psyplot.github.io
+  dev_url: https://github.com/psyplot/psyplot
 
 extra:
   recipe-maintainers:
