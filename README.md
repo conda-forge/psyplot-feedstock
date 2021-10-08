@@ -1,17 +1,17 @@
 About psyplot
 =============
 
-Home: https://github.com/Chilipp/psyplot
+Home: https://github.com/psyplot/psyplot
 
-Package license: GPL-2.0-only
+Package license: LGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/psyplot-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python package for interactive data visualization
 
-Development: https://github.com/Chilipp/psyplot
+Development: https://github.com/psyplot/psyplot
 
-Documentation: http://psyplot.readthedocs.io/en/latest/
+Documentation: https://psyplot.github.io
 
 psyplot is an cross-platform open source python project that mainly
 combines the plotting utilities of matplotlib and the data management of
