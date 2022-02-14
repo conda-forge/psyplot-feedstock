@@ -1,6 +1,6 @@
 {% set name = "psyplot" %}
-{% set version = "1.4.1" %}
-{% set sha256 = "00c6c4228ba106fa3e66c5e645a9bab442654e569b831b0890f2b676d891eb49" %}
+{% set version = "1.4.2" %}
+{% set sha256 = "329d3af93fbe93b80bb69a0bc10ec67f8a5848c07d21decdacf37bcb3bec7517" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,6 @@ source:
 build:
   number: 0
   script: python -m pip install . --no-deps --ignore-installed -vvv
-  skip: True  # [py == 37]
   entry_points:
     - psyplot = psyplot.__main__:main
     - psyplot-plugin = psyplot.plugin_template:main
