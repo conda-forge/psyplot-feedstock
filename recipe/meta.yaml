@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
+    - versioneer
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
