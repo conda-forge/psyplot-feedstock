@@ -49,8 +49,7 @@ about:
   license: LGPL-3.0-only
   license_family: GPL
   license_file:
-    - COPYING
-    - COPYING.LESSER
+    - LICENSES/
   summary: Python package for interactive data visualization
 
   description: |
