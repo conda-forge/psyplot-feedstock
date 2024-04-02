@@ -45,7 +45,7 @@ test:
     - psyplot.sphinxext
 
 about:
-  home: https://github.com/psyplot/psyplot
+  home: https://codebase.helmholtz.cloud/psyplot/psyplot
   license: LGPL-3.0-only
   license_family: GPL
   license_file:
@@ -58,7 +58,7 @@ about:
     the xarray package and integrates them into a software that can be used via
     command-line and via a GUI.
   doc_url: https://psyplot.github.io
-  dev_url: https://github.com/psyplot/psyplot
+  dev_url: https://codebase.helmholtz.cloud/psyplot/psyplot
 
 extra:
   recipe-maintainers:
