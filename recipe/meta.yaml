@@ -1,6 +1,6 @@
 {% set name = "psyplot" %}
-{% set version = "1.4.3" %}
-{% set sha256 = "a7fe80ec915225f99ab7c6cd1d8b289662936df600dba4dec972055a076f9a1f" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "1f4ac3917d8061db2a3400f9b9e63728c79fcd532694227f4b70babb454adee8" %}
 
 package:
   name: {{ name|lower }}
@@ -12,11 +12,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python -m pip install . --no-deps --ignore-installed -vvv
+  number: 0
+  skip: true  # [py<39]
+  script: {{ PYTHON }} -m pip install . --no-deps -vvv
   entry_points:
     - psyplot = psyplot.__main__:main
-    - psyplot-plugin = psyplot.plugin_template:main
 
 requirements:
   build:
@@ -25,6 +25,9 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - versioneer
+    - tomli
   run:
     - python
     - matplotlib-base
@@ -36,20 +39,19 @@ requirements:
 test:
   commands:
     - psyplot --help
-    - psyplot-plugin --help
   imports:
     - psyplot
-    - psyplot.compat
     - psyplot.config
     - psyplot.sphinxext
+    - psyplot.data
+    - psyplot.project
 
 about:
-  home: https://github.com/psyplot/psyplot
+  home: https://codebase.helmholtz.cloud/psyplot/psyplot
   license: LGPL-3.0-only
   license_family: GPL
   license_file:
-    - COPYING
-    - COPYING.LESSER
+    - LICENSES/
   summary: Python package for interactive data visualization
 
   description: |
@@ -58,7 +60,7 @@ about:
     the xarray package and integrates them into a software that can be used via
     command-line and via a GUI.
   doc_url: https://psyplot.github.io
-  dev_url: https://github.com/psyplot/psyplot
+  dev_url: https://codebase.helmholtz.cloud/psyplot/psyplot
 
 extra:
   recipe-maintainers:
