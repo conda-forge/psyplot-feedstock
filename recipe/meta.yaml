@@ -36,12 +36,12 @@ requirements:
 test:
   commands:
     - psyplot --help
-    - psyplot-plugin --help
   imports:
     - psyplot
-    - psyplot.compat
     - psyplot.config
     - psyplot.sphinxext
+    - psyplot.data
+    - psyplot.project
 
 about:
   home: https://codebase.helmholtz.cloud/psyplot/psyplot
