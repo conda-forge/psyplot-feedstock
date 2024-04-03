@@ -20,12 +20,13 @@ build:
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
-    - versioneer
-    - tomli
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
     - pip
+    - setuptools
+    - versioneer
+    - tomli
   run:
     - python
     - matplotlib-base
