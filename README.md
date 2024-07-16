@@ -299,4 +299,5 @@ Feedstock Maintainers
 =====================
 
 * [@Chilipp](https://github.com/Chilipp/)
+* [@valeriupredoi](https://github.com/valeriupredoi/)
 
